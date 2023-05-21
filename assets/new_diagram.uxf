@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>6</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>666</x>
+      <y>324</y>
+      <w>300</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>DepartamentoImpl
+--
++materialesOfertados: List&lt;Material&gt;
++materialesAdquiridos: List&lt;Material&gt;
+-nombre: String
+-abreviatura: String
+-acuartelamiento: TipoAcuartelamiento
+-email: String
+-credito: int
+-responsableEmpleo: TipoEmpleo
+-responsableNombre: String
+-telefono: String
+-direccion: String
+-latitud: String
+-longitud: String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>330</x>
+      <y>330</y>
+      <w>258</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>MaterialImpl
+--
+-nombre: String
+-dptoOferta: Departamento
+-dptoAdquisicion: Departamento
+-categoria: Categoria
+-descripcion: String
+-dimensiones: String
+-peso: String
+-estado: EstadoMaterial
+-fechaAdquisicion: LocalDate
+-fechaOferta: LocalDate
+-imagen: String
+-milis: int
+-cantidad: int
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>54</x>
+      <y>330</y>
+      <w>216</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>CategoriaImpl
+--
++materiales: List&lt;Material&gt;
+-categoria: String
+-descripcion: String
+-grupo: TipoGrupo
+-minMilis: int
+-maxMilis: int
+--
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>372</x>
+      <y>72</y>
+      <w>174</w>
+      <h>186</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+Material
+--
+--
+~getNombre(): String
+~getDeptoOferta(): Departamento
+~getDptoAdquisicion(): Departamento
+~getCategoria(): Categoria
+~getDescripcion(): String
+~getDimensiones(): String
+~getPeso(): String
+~getEstado(): EstadoMaterial
+~getTipoMaterial(): TipoMaterial
+~getFechaAdquisicion(): LocalDate
+~getFechaOferta(): LocalDate
+~getImagen(): String
+~getMilis(): int
+~getCantidad(): int
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>696</x>
+      <y>78</y>
+      <w>204</w>
+      <h>174</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+Departamento
+--
+~getMaterialesOfertados(): List&lt;Material&gt;
+~getMaterialesAdquiridos(): List&lt;Material&gt;
+~getNombre(): String
+~getAbreviatura(): String
+~getAcuartelamiento(): TipoAcuartelamiento
+~getEmail(): String
+~getCredito(): int
+~getResponsableEmpleo(): TipoEmpleo
+~getResponsableNombre(): String
+~getTelefono(): String
+~getDireccion(): String
+~getLatitud(): String
+~getLongitud(): String
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>252</x>
+      <y>648</y>
+      <w>198</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Inventariable
+--
+-noc: String
+-numeroSerie: String
+--
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>90</x>
+      <y>102</y>
+      <w>150</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+Categoria
+--
+--
+~getCategoria(): String
+~getDescripcion(): String
+~getGrupo(): TipoGrupo
+~getMateriales(): List&lt;Material&gt;
+~getMinMilis(): int
+~getMaxMilis(): int
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>498</x>
+      <y>648</y>
+      <w>174</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>NoInventariable
+--
+-bonificacion: int
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>84</x>
+      <y>564</y>
+      <w>156</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+esInventariable
+--
+--
+~getNoc(): String
+~getNumeroSerie(): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>636</x>
+      <y>558</y>
+      <w>168</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+esNoInvetnariable
+--
+--
+~getBonificacion(): int
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>786</x>
+      <y>246</y>
+      <w>18</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>462</x>
+      <y>252</y>
+      <w>18</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>156</x>
+      <y>204</y>
+      <w>18</w>
+      <h>138</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;210.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>456</x>
+      <y>492</y>
+      <w>96</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;170.0;140.0;170.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>534</x>
+      <y>588</y>
+      <w>18</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=-
+</panel_attributes>
+    <additional_attributes>10.0;100.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>366</x>
+      <y>582</y>
+      <w>108</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>lt=-
+</panel_attributes>
+    <additional_attributes>10.0;110.0;10.0;20.0;160.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>600</x>
+      <y>606</y>
+      <w>66</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+</panel_attributes>
+    <additional_attributes>90.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>234</x>
+      <y>600</y>
+      <w>84</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+</panel_attributes>
+    <additional_attributes>10.0;10.0;120.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>264</x>
+      <y>378</y>
+      <w>78</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=*</panel_attributes>
+    <additional_attributes>110.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>582</x>
+      <y>378</y>
+      <w>96</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=*</panel_attributes>
+    <additional_attributes>10.0;10.0;140.0;10.0</additional_attributes>
+  </element>
+</diagram>
