@@ -9,7 +9,7 @@ public abstract class MaterialImpl implements Material{
 	}
 	public static enum EstadoMaterial {
 		disponible,
-	    adquirido,
+	    pendiente,
 	    entregado
 	}
 	
