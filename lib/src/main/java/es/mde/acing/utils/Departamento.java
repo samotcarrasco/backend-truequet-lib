@@ -2,7 +2,6 @@ package es.mde.acing.utils;
 
 import java.util.List;
 
-import es.mde.acing.utils.DepartamentoImpl.TipoAcuartelamiento;
 import es.mde.acing.utils.DepartamentoImpl.TipoEmpleo;
 
 public interface Departamento {
@@ -15,7 +14,7 @@ public interface Departamento {
 
 	String getAbreviatura();
 
-	TipoAcuartelamiento getAcuartelamiento();
+	Unidad getAcuartelamiento();
 
 	String getEmail();
 

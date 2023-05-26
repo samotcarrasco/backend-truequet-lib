@@ -8,3 +8,5 @@ build
 .project
 .settings/
 ./lib/bin/
+./lib/.project
+lib/.project

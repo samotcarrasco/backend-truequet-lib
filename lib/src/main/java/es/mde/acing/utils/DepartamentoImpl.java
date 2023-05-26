@@ -7,9 +7,10 @@ import java.util.List;
 
 public class DepartamentoImpl implements Departamento {
 	
-	public static enum TipoAcuartelamiento {
-		ACING
-	}
+	//cambiamos enum por la entidad Unidad
+//	public static enum TipoAcuartelamiento {
+//		ACING
+//	}
 	public enum TipoEmpleo { 
 		Soldado, 
 		Cabo, 
@@ -23,7 +24,7 @@ public class DepartamentoImpl implements Departamento {
 	
 	private String nombre;
 	private String abreviatura;
-	private TipoAcuartelamiento acuartelamiento;
+	private Unidad acuartelamiento;
 	private String email;
 	private int credito;
 	private TipoEmpleo responsableEmpleo;
@@ -74,11 +75,11 @@ public class DepartamentoImpl implements Departamento {
 	}
 
 	@Override
-	public TipoAcuartelamiento getAcuartelamiento() {
+	public Unidad getAcuartelamiento() {
 		return acuartelamiento;
 	}
 
-	public void setAcuartelamiento(TipoAcuartelamiento acuartelamiento) {
+	public void setAcuartelamiento(Unidad acuartelamiento) {
 		this.acuartelamiento = acuartelamiento;
 	}
 
