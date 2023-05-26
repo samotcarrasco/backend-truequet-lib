@@ -78,10 +78,18 @@ public abstract class UnidadImpl implements Unidad {
 	public TipoEmpleo getResponsableEmpleo() {
 		return responsableEmpleo;
 	}
+	
+	public void setResponsableEmpleo(TipoEmpleo responsableEmpleo) {
+		this.responsableEmpleo = responsableEmpleo;
+	}
 
 	@Override
 	public String getResponsableNombre() {
 		return responsableNombre;
+	}
+
+	public void setResponsableNombre(String responsableNombre) {
+		this.responsableNombre = responsableNombre;
 	}
 
 	@Override
@@ -89,11 +97,18 @@ public abstract class UnidadImpl implements Unidad {
 		return latitud;
 	}
 
+	public void setLatitud(String latitud) {
+		this.latitud = latitud;
+	}
+
 	@Override
 	public String getLongitud() {
 		return longitud;
 	}
 	
-
+	public void setLongitud(String longitud) {
+		this.longitud = longitud;
+	}
+	
     
 }
