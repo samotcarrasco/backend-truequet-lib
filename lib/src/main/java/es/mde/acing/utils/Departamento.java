@@ -8,7 +8,7 @@ public interface Departamento {
 
 	List<Material> getMaterialesAdquiridos();
 
-	AcuartelamientoImpl getAcuartelamiento();
+	Acuartelamiento getAcuartelamiento();
 
 	int getCredito();
 

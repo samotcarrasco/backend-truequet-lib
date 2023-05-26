@@ -7,12 +7,12 @@ import es.mde.acing.utils.UnidadImpl.TipoEmpleo;
 
 
 
-public class DepartamentoImpl extends UnidadImpl implements Unidad, Departamento {
+public class DepartamentoImpl extends UnidadImpl implements Departamento {
 	
 	
 	public List<Material> materialesOfertados;	
 	public List<Material> materialesAdquiridos;
-	private AcuartelamientoImpl acuartelamiento;
+	private Acuartelamiento acuartelamiento;
 	private int credito;
     
 	
@@ -38,11 +38,11 @@ public class DepartamentoImpl extends UnidadImpl implements Unidad, Departamento
 
 
 	@Override
-	public AcuartelamientoImpl getAcuartelamiento() {
+	public Acuartelamiento getAcuartelamiento() {
 		return acuartelamiento;
 	}
 
-	public void setAcuartelamiento(AcuartelamientoImpl acuartelamiento) {
+	public void setAcuartelamiento(Acuartelamiento acuartelamiento) {
 		this.acuartelamiento = acuartelamiento;
 	}
 
