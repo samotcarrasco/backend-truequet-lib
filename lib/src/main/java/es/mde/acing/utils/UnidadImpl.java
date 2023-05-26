@@ -2,16 +2,31 @@ package es.mde.acing.utils;
 
 import java.util.List;
 
+import es.mde.acing.utils.UnidadImpl.TipoEmpleo;
 
 
-public class UnidadImpl implements Unidad {
+
+public abstract class UnidadImpl implements Unidad {
+	
+	public enum TipoEmpleo { 
+		Soldado, 
+		Cabo, 
+		Suboficial, 
+		Oficial
+	}
 
 	private String nombre;
 	private String abreviatura;
 	private String telefono;
 	private String direccion;
+	private String longitud;
+	private String latitud;
+	private String email;
+	private TipoEmpleo responsableEmpleo;
+	private String responsableNombre;
 	
-	public List<Departamento> departamentos;
+	
+
 
 	public String getNombre() {
 		return nombre;
@@ -45,14 +60,33 @@ public class UnidadImpl implements Unidad {
 		this.direccion = direccion;
 	}
 
-	public List<Departamento> getDepartamentos() {
-		return departamentos;
+	@Override
+	public String getEmail() {
+		return email;
 	}
 
-	public void setDepartamentos(List<Departamento> departamentos) {
-		this.departamentos = departamentos;
+	
+
+	@Override
+	public TipoEmpleo getResponsableEmpleo() {
+		return responsableEmpleo;
+	}
+
+	@Override
+	public String getResponsableNombre() {
+		return responsableNombre;
+	}
+
+	@Override
+	public String getLatitud() {
+		return latitud;
+	}
+
+	@Override
+	public String getLongitud() {
+		return longitud;
 	}
 	
-	
+
     
 }
