@@ -27,15 +27,17 @@ public abstract class UnidadImpl implements Unidad {
 	
 	
 
-
+	@Override
 	public String getNombre() {
 		return nombre;
 	}
 
+	
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
-
+	
+	@Override
 	public String getAbreviatura() {
 		return abreviatura;
 	}
@@ -44,6 +46,7 @@ public abstract class UnidadImpl implements Unidad {
 		this.abreviatura = abreviatura;
 	}
 
+	@Override
 	public String getTelefono() {
 		return telefono;
 	}
@@ -51,13 +54,14 @@ public abstract class UnidadImpl implements Unidad {
 	public void setTelefono(String telefono) {
 		this.telefono = telefono;
 	}
-
+	
+	@Override
 	public String getDireccion() {
 		return direccion;
 	}
 
-	public void setDireccion(String direccion) {
-		this.direccion = direccion;
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 	@Override
@@ -65,7 +69,10 @@ public abstract class UnidadImpl implements Unidad {
 		return email;
 	}
 
-	
+	public void setDireccion(String direccion) {
+		this.direccion = direccion;
+	}
+
 
 	@Override
 	public TipoEmpleo getResponsableEmpleo() {
