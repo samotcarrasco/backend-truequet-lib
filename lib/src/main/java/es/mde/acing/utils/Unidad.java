@@ -14,7 +14,4 @@ public interface Unidad {
 	String getResponsableNombre();
 	String getTelefono();
 	String getDireccion();
-	String getLatitud();
-	String getLongitud();
-	
 }

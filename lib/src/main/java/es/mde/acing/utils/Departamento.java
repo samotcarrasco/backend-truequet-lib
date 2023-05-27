@@ -11,5 +11,9 @@ public interface Departamento {
 	Acuartelamiento getAcuartelamiento();
 
 	int getCredito();
+	
+	String getLatitud();
+	
+	String getLongitud();
 
 }

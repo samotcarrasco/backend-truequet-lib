@@ -14,7 +14,8 @@ public class DepartamentoImpl extends UnidadImpl implements Departamento {
 	public List<Material> materialesAdquiridos;
 	private Acuartelamiento acuartelamiento;
 	private int credito;
-    
+	private String longitud;
+	private String latitud;
 	
 
 
@@ -59,6 +60,24 @@ public class DepartamentoImpl extends UnidadImpl implements Departamento {
 	@Override
 	public String toString() {
 		return "Departamento, nombre" + getAbreviatura() + "]";
+	}
+
+	@Override
+	public String getLongitud() {
+		return longitud;
+	}
+
+	public void setLongitud(String longitud) {
+		this.longitud = longitud;
+	}
+     
+	@Override
+	public String getLatitud() {
+		return latitud;
+	}
+
+	public void setLatitud(String latitud) {
+		this.latitud = latitud;
 	}
 	
 }

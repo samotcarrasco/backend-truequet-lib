@@ -14,6 +14,5 @@ public class AcuartelamientoImpl extends UnidadImpl implements Acuartelamiento{
 	public void setDepartamentos(List<Departamento> departamentos) {
 		this.departamentos = departamentos;
 	}
-
 	
 }

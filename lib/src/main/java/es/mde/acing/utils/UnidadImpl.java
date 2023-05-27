@@ -19,8 +19,6 @@ public abstract class UnidadImpl implements Unidad {
 	private String abreviatura;
 	private String telefono;
 	private String direccion;
-	private String longitud;
-	private String latitud;
 	private String email;
 	private TipoEmpleo responsableEmpleo;
 	private String responsableNombre;
@@ -92,23 +90,4 @@ public abstract class UnidadImpl implements Unidad {
 		this.responsableNombre = responsableNombre;
 	}
 
-	@Override
-	public String getLatitud() {
-		return latitud;
-	}
-
-	public void setLatitud(String latitud) {
-		this.latitud = latitud;
-	}
-
-	@Override
-	public String getLongitud() {
-		return longitud;
-	}
-	
-	public void setLongitud(String longitud) {
-		this.longitud = longitud;
-	}
-	
-    
 }
