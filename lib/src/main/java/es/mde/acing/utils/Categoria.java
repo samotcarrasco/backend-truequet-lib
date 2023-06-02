@@ -10,14 +10,16 @@ public interface Categoria {
 
 	String getDescripcion();
 
-	TipoGrupo getGrupo();
+	//TipoGrupo getGrupo();
 
 	List<Material> getMateriales();
 	
 	int getMinMilis();
 	
 	int getMaxMilis();
-
-
+	
+	Categoria getCategoriaPadre();
+	
+	List<Categoria> getCategoriasHijas();
 
 }

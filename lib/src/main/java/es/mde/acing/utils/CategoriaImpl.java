@@ -19,13 +19,14 @@ public class CategoriaImpl implements Categoria{
 	
 	private String categoria;
 	private String descripcion;
-	private TipoGrupo grupo;
 	private int minMilis;
 	private int maxMilis;
-
-	public CategoriaImpl() {}
 	
-	////@Override
+	private Categoria categoriaPadre;
+	private List<Categoria> categoriasHijas;
+
+	
+	@Override
 	public String getCategoria() {
 		return categoria;
 	}
@@ -34,7 +35,7 @@ public class CategoriaImpl implements Categoria{
 		this.categoria = categoria;
 	}
 
-	//@Override
+	@Override
 	public String getDescripcion() {
 		return descripcion;
 	}
@@ -43,16 +44,7 @@ public class CategoriaImpl implements Categoria{
 		this.descripcion = descripcion;
 	}
 
-	//@Override
-	public TipoGrupo getGrupo() {
-		return grupo;
-	}
-
-	public void setGrupo(TipoGrupo grupo) {
-		this.grupo = grupo;
-	}
-
-	//@Override
+	@Override
 	public int getMinMilis() {
 		return minMilis;
 	}
@@ -61,7 +53,7 @@ public class CategoriaImpl implements Categoria{
 		this.minMilis = minMilis;
 	}
 
-	//@Override
+	@Override
 	public int getMaxMilis() {
 		return maxMilis;
 	}
@@ -80,12 +72,27 @@ public class CategoriaImpl implements Categoria{
 		this.materiales = materiales;
 	}
 
-	
-
-
 
 	public String toString() {
 		return "Categoria nombre" + getCategoria() + "]";
+	}
+
+    @Override
+	public Categoria getCategoriaPadre() {
+		return categoriaPadre;
+	}
+
+	public void setCategoriaPadre(Categoria categoriaPadre) {
+		this.categoriaPadre = categoriaPadre;
+	}
+	
+    @Override
+	public List<Categoria> getCategoriasHijas() {
+		return categoriasHijas;
+	}
+
+	public void setCategoriasHijas(List<Categoria> categoriasHijas) {
+		this.categoriasHijas = categoriasHijas;
 	}
 
 
