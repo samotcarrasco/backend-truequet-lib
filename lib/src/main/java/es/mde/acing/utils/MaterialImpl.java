@@ -27,6 +27,8 @@ public abstract class MaterialImpl implements Material{
 	private int milis;
 	private int cantidad;
 	
+	private TipoMaterial tipoMaterial;
+	
 	
 	@Override
 	public String getNombre() {
@@ -95,7 +97,7 @@ public abstract class MaterialImpl implements Material{
 	
 	@Override
 	public TipoMaterial getTipoMaterial() {
-		return null;
+		return tipoMaterial;
 	}
 
 	@Override
@@ -137,12 +139,14 @@ public abstract class MaterialImpl implements Material{
 	public void setCantidad(int cantidad) {
 		this.cantidad = cantidad;
 	}
-
-
 	@Override
 	public String toString() {
-		return "MATERAL [Nombre=" + getNombre() +"]";
+		return "MaterialImpl [nombre=" + nombre + ", dptoOferta=" + dptoOferta + ", dptoAdquisicion=" + dptoAdquisicion
+				+ ", categoria=" + categoria + ", descripcion=" + descripcion + ", dimensiones=" + dimensiones
+				+ ", peso=" + peso + ", estado=" + estado + ", fechaAdquisicion=" + fechaAdquisicion + ", fechaOferta="
+				+ fechaOferta + ", imagen=" + imagen + ", milis=" + milis + ", cantidad=" + cantidad + ", tipo:" + tipoMaterial;
 	}
-	
-		
+
+
+			
 }
