@@ -141,7 +141,7 @@ public abstract class MaterialImpl implements Material{
 		return "MaterialImpl [nombre=" + nombre + ", dptoOferta=" + dptoOferta + ", dptoAdquisicion=" + dptoAdquisicion
 				+ ", categoria=" + categoria + ", descripcion=" + descripcion + ", dimensiones=" + dimensiones
 				+ ", peso=" + peso + ", estado=" + estado + ", fechaAdquisicion=" + fechaAdquisicion + ", fechaOferta="
-				+ fechaOferta + ",  imagen=" + imagen + ", milis=" + milis + ", cantidad=" + cantidad + ", tipo:" + tipoMaterial;
+				+ fechaOferta + ",  imagen=" + imagen + ", milis=" + milis + ", cantidad=" + cantidad ;
 	}
 
 
