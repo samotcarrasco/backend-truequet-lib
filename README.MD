@@ -2,5 +2,7 @@
 
 *Librería proyecto TRUEQUET*
 
+Diagrama de clases:
 
-![](assets/Diagrama_clases_libreria.jpg)
+
+![](assets/truequet_libreria.jpg)
