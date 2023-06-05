@@ -3,4 +3,4 @@
 *Librería proyecto TRUEQUET*
 
 
-![](assets/Diagrama_clases_libreria.png)
+![](assets/Diagrama_clases_libreria.jpg)

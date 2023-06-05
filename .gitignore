@@ -7,6 +7,6 @@ build
 .gitattributes
 .project
 .settings/
-./lib/bin/
+./lib/bin/*
 ./lib/.project
 lib/.project
