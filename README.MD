@@ -2,7 +2,7 @@
 
 *Librería proyecto TRUEQUET*
 
-Diagramas de clases (disponibles en el apartado [WIKI] (https://github.com/samotcarrasco/backend-truequet-lib/wiki/diagramas)
+Diagramas de clases (disponibles en el apartado [WIKI](https://github.com/samotcarrasco/backend-truequet-lib/wiki/diagramas)
 
 Librería
 ![truequet_libreria](https://github.com/samotcarrasco/backend-truequet-lib/assets/112638194/b464bb4b-5517-403c-a9f3-f3ce1e275c87)
